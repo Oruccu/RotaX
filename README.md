@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# RotaX
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+RotaX, gezilerinizde rotalar oluşturmanızı ve planlama yaparken notlar almanızı sağlayan bir mobil uygulamadır. React Native ve .NET teknolojileriyle geliştirilen uygulama, seyahat deneyiminizi iyileştirmek için harita tabanlı özellikler ve kullanıcı dostu bir arayüz sunar.
 
-## Get started
+![Uygulama İcon Görüntüsü](./app/assets/Image/RotaaX.png)
 
-1. Install dependencies
+## Özellikler
 
-   ```bash
-   npm install
-   ```
+- **Adres Arama ve Harita Görüntüleme**: Kullanıcı, haritada konum araması yapabilir ve istediği adresleri görüntüleyebilir.
+- **Konum İşaretleme**: Girilen adres veya konum bilgisi harita üzerinde işaretlenir.
+- **Planlama ve Not Alma**: Her bir rota için notlar alarak seyahatinizi daha iyi organize edebilirsiniz.
+- **React Native ve .NET Entegrasyonu**: Uygulama, mobil arayüz için React Native, backend işlemleri için .NET teknolojilerini kullanır.
+- **Kullanıcı Dostu Arayüz**: Basit ve şık bir arayüz ile kolay bir kullanım deneyimi sağlar.
 
-2. Start the app
+## Kurulum
 
-   ```bash
-    npx expo start
-   ```
+RotaX uygulamasını çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 
-In the output, you'll find options to open the app in a
+### Gereksinimler
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Node.js**: [Node.js](https://nodejs.org) yüklü olmalıdır.
+- **Expo CLI**: `npm install -g expo-cli` komutuyla yükleyin.
+- **.NET SDK**: Backend için .NET SDK gereklidir.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Adımlar
 
-## Get a fresh project
-
-When you're ready, run:
-
+1. **Projeyi Klonlayın**:
 ```bash
-npm run reset-project
+   git clone https://github.com/kullanici-adi/rotaX.git
+   cd rota
+```
+2. **Bağımlılıkları Yükleyin**:
+```bash
+   npm install
+```
+3. **Expo ile Uygulamayı Başlatın**:
+```bash
+expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+4. **Uygulamayı Çalıştırın**: Expo'nun sağladığı QR kod ile uygulamayı telefonunuzda açabilir veya bir Android/iOS emülatöründe çalıştırabilirsiniz.
 
-## Learn more
+### Uygulama Görselleri
 
-To learn more about developing your project with Expo, look at the following resources:
+![Uygulama İcon Görüntüsü](./app/assets/PageScreen/Home.png)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Uygulama İcon Görüntüsü](./app/assets/PageScreen/Maps.png)
