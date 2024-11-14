@@ -20,7 +20,7 @@ RotaX uygulamasını çalıştırmak için aşağıdaki adımları takip edebili
 
 - **Node.js**: [Node.js](https://nodejs.org) yüklü olmalıdır.
 - **Expo CLI**: `npm install -g expo-cli` komutuyla yükleyin.
-- **.NET SDK**: Backend için .NET SDK gereklidir.
+- **.NET SDK**: Backend için .NET SDK gereklidir. (Projeye henüz eklenmemiştir.)
 
 ### Adımlar
 
