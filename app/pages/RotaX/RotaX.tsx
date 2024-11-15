@@ -8,6 +8,7 @@ import SearchBar from '../../components/SearchBar';
 import MapContainer from '../../components/MapContainer';
 import styles from './RotaXStyles';
 import { Region } from 'react-native-maps';
+import Error from '@/app/components/Error';
 
 const RotaX: React.FC = () => {
   const [region, setRegion] = useState<Region>({
@@ -26,7 +27,10 @@ const RotaX: React.FC = () => {
       if (status !== 'granted') {
         console.log('Konum izni verilmedi!');
         setPermissionGranted(false);
+        <Error/>
         return;
+      }
+      else{
       }
       setPermissionGranted(true);
       const location = await Location.getCurrentPositionAsync({});
@@ -68,9 +72,11 @@ const RotaX: React.FC = () => {
     <View style={styles.container}>
       <Title />
       <SearchBar
-        address={address}
-        onChangeAddress={setAddress}
+        value={address}
+        onChangeValue={setAddress}
         onSearch={debouncedSearch}
+        placeholder='Adres veya konum girin (örneğin, Ankara)'
+        iconName='location-arrow'
       />
       <MapContainer region={region} address={address} onRegionChange={setRegion} />
     </View>
